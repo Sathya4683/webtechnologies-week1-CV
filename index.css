@@ -1,0 +1,102 @@
+/* Base Layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fa;
+  padding: 2rem;
+  color: #222;
+}
+
+/* A4-style container */
+.cv-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 2rem;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+/* Headings */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.25rem;
+  color: #0d47a1;
+}
+
+h2 {
+  font-size: 1.25rem;
+  margin: 1.2rem 0 0.5rem;
+  color: #1565c0;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0.75rem 0 0.25rem;
+  color: #444;
+}
+
+/* Sections */
+.section {
+  margin-bottom: 1.5rem;
+}
+
+.section p,
+.section li {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 0.4rem;
+}
+
+/* Flex display for dual layouts */
+.flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+/* Bullet list */
+ul {
+  padding-left: 1.25rem;
+}
+
+li {
+  list-style-type: disc;
+}
+
+/* Achievements list */
+.achievements li::marker {
+  color: #4caf50;
+}
+
+/* Divider */
+hr {
+  margin: 1.5rem 0;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .cv-container {
+    padding: 1.25rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }
+}
